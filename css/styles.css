@@ -1,17 +1,64 @@
-/* Estilos generales */
-body {
+/* Reset de márgenes y padding */
+* {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  box-sizing: border-box;
 }
 
-/* Contenedor para centrar el contenido */
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding-top: 60px; /* Para evitar que el contenido se solape con el header */
+}
+
+/* Header fijo con color */
+header {
+  background-color: #333; /* Color oscuro igual que el footer */
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+/* Estilos para el logo en el header */
+header img {
+  height: 40px;
+}
+
+/* Estilos para la barra de navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Contenedor centrado para bienvenida */
 .welcome-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Ocupa toda la pantalla */
+  height: calc(100vh - 120px); /* Resta el tamaño del header y footer */
   padding: 20px;
 }
 
@@ -19,7 +66,7 @@ body {
 .welcome-box {
   text-align: center;
   max-width: 600px;
-  background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -32,20 +79,26 @@ body {
   margin-bottom: 10px;
 }
 
-/* Estilos del footer */
+/* Footer fijo con color igual al header */
 footer {
-  text-align: center;
-  padding: 10px;
   background-color: #333;
   color: white;
-  position: absolute;
-  width: 100%;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
   bottom: 0;
+  width: 100%;
 }
 
-/* Iconos sociales */
+/* Efecto de hover en los iconos del footer */
 .social-icons a {
   color: white;
   margin: 0 10px;
   font-size: 20px;
+  transition: color 0.3s ease-in-out; /* Suaviza la transición */
+}
+
+/* Cambio de color al pasar el mouse */
+.social-icons a:hover {
+  color: #ffcc00; /* Color amarillo dorado, puedes cambiarlo */
 }
