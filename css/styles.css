@@ -1,61 +1,51 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin-left: 20px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  footer {
-    background-color: #333;
-    color: rgba(254, 254, 254, 0.855);
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
 
-  .social-icons a {
-    color: white; /* Color blanco */
-    font-size: 2em; /* Tamaño doble */
-    margin: 0 10px; /* Espaciado entre iconos */
-  }
+/* Contenedor para centrar el contenido */
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa toda la pantalla */
+  padding: 20px;
+}
 
-  .social-icons a:hover {
-    color: #0077b5; /* Cambia el color al pasar el mouse (puedes ajustarlo) */
-  }
+/* Caja de bienvenida */
+.welcome-box {
+  text-align: center;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen dentro del box */
+.welcome-box img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Estilos del footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Iconos sociales */
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 20px;
+}
