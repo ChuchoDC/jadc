@@ -42,10 +42,20 @@ body {
   
   footer {
     background-color: #333;
-    color: white;
+    color: rgba(254, 254, 254, 0.855);
     text-align: center;
     padding: 10px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
+  }
+
+  .social-icons a {
+    color: white; /* Color blanco */
+    font-size: 2em; /* Tamaño doble */
+    margin: 0 10px; /* Espaciado entre iconos */
+  }
+
+  .social-icons a:hover {
+    color: #0077b5; /* Cambia el color al pasar el mouse (puedes ajustarlo) */
   }
